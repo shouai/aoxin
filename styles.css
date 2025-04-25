@@ -634,22 +634,5 @@ footer p {
   .image-gallery img:hover {
     transform: scale(1.02);
   }
-  
-  #image-modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    cursor: zoom-out;
-  }
-  
-  #image-modal img {
-    max-width: 90%;
-    max-height: 90%;
-    border: 4px solid white;
-    border-radius: 10px;
-  }
+
     
