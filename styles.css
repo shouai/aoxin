@@ -1,3 +1,12 @@
+/* 样式：确保网站在各种设备上响应式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* 基础样式 */
 * {
     margin: 0;
@@ -36,6 +45,13 @@ img {
 p {
     text-indent: 2em;
     line-height: 1.8;
+}
+
+/* 核心内容 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 
@@ -511,28 +527,27 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* 响应式设计 */
 @media (max-width: 768px) {
-    .main-nav {
-        display: none;
+    nav ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
     }
     
     .hero h1 {
-        font-size: 36px;
+        font-size: 24px;
     }
     
     .hero p {
-        font-size: 18px;
-    }
-    
-    .achievement-content {
-        flex-direction: column;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
+        font-size: 16px;
     }
 }
+
+
 
 
 
