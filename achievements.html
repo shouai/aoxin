@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目成果 - 海大智渔芯创平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="海大智渔芯创平台">
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="team.html">团队成员</a></li>
+                    <li><a href="innovation.html">项目创新</a></li>
+                    <li></li><a href="achievements.html" class="dropdown-toggle">项目成果</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="achievements">
+        
+        <div class="container">
+            <h2>项目成果</h2>
+            
+            <div id="model-improvement" class="achievement-item">
+                <h3>实现远端实时预报的方案-边缘计算</h3>
+                <div class="achievement-content">
+                    <div class="image-gallery">
+                    <div class="achievement-text">
+                        <p>深度学习渔场预报系统已成熟应用，但因依赖大型服务器导致数据传输与训练耗时，远洋渔船无法远端实时预报，为此采用边缘计算方案解决该问题。</p>
+                        <img src="images/c1.png" alt="计算模型" style="max-width: 50%; height: auto;margin-top: 40px; ">
+                        <p style="margin-top: 40px; ">边缘计算：
+                            数据处理—远程移至附近
+                            有效应对数据量增多和网络容量受限的挑战
+                            </p>
+                    <p>边缘端设备:华为昇腾Atlas200IDKA2开发者套.稳定提供的峰值算力FP16为4TFLOPs、INT8为8TOPs，算力优秀；净重仅330g，便于携带。</p>
+                    <p>降低硬件依赖风险：保障芯片供应稳定性与连续性，避免因国际局势波动引发的供应中断。
+                        保障技术自主可控：强化数据隐私保护，尤其在关键基础设施和敏感数据领域，防止数据泄露。
+                        支持特定场景应用：优化国内计算资源配置，提升特定场景下的计算效率</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="image-gallery">
+            <div id="agile-platform" class="achievement-item">
+                
+    <h3>迁移部署--实现国产AI芯片的替代</h3>
+    <div class="achievement-content">
+        <div class="achievement-text">
+            <p>模型迁移：从一个环境迁移到另一个环境，重点是适配。
+                模型部署：将迁移后的模型集成到目标硬件或系统中，重点是实际运行和性能优化。</p>
+             <img src="images/c2.png" alt="计算模型" style="max-width: 70%; height: auto; ">
+            <img src="images/c3.png" alt="计算模型" style="max-width: 100%; height: auto;margin-top: 30px; ">
+
+            
+            <div class="ai-section">
+                <p style="margin-top: 60px; ">AI芯片部署流程关键步骤：</p>
+            <div class="ai-flow">
+                <div class="step">
+                    <strong class="highlight">了解Tiling策略：</strong> 明确CPU与NPU之间的差异
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <strong class="highlight">构建虚拟环境：</strong> 基于适配Python的Tensorflow框架及官方CANN框架插件包
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <strong class="highlight">模型迁移：</strong> 将充分训练得到的pb格式转化为om格式
+                </div>
+                <div class="arrow">➡</div>
+                <div class="step">
+                    <strong class="highlight">AscendCL算子开发：</strong> 调用接口，实现模型加载、资源调用、数据传输、模型推理等工作
+                </div>
+            
+            </div>
+            <p style="margin-top: 60px; ">
+                通过在AI芯片的CPU与NPU上开展应用开发与推理测试，对芯片性能进行系统性评估。
+            </p>
+            
+            <img src="images/c4.png" alt="计算模型" style="max-width: 70%; height: auto;">
+            </div>
+          </div>     
+        </div>
+    </div>
+</div>
+
+            <div id="multi-factor-model" class="achievement-item">
+                <h3>构建量化评估体系，动态选择迁移方式</h3>
+                <div class="achievement-content">
+                    
+                    <div class="achievement-text">
+                        <p>根据网络架构特性动态选择合适的迁移方式，以实现模型在迁移过程中的精度与效率的平衡优化。</p>
+                        <style>
+                            .training-comparison {
+                              display: flex;
+                              flex-wrap: wrap;
+                              gap: 20px;
+                              font-family: "微软雅黑", sans-serif;
+                              margin-top: 40px;
+                            }
+                            
+                            .training-left,
+                            .training-right {
+                              flex: 1;
+                              min-width: 300px;
+                            }
+                            
+                            .section-title {
+                              background-color: #004a99;
+                              color: white;
+                              padding: 8px 16px;
+                              font-weight: bold;
+                              border-radius: 6px 6px 0 0;
+                              font-size: 16px;
+                            }
+                            
+                            .training-box {
+                              border: 1px solid #dcdcdc;
+                              border-radius: 6px;
+                              margin-bottom: 20px;
+                              overflow: hidden;
+                              background-color: #f9f9f9;
+                            }
+                            
+                            .training-content {
+                              padding: 15px;
+                              line-height: 1.8;
+                              font-size: 15px;
+                            }
+                            
+                            .training-content .red {
+                              color: red;
+                              font-weight: bold;
+                            }
+                            
+                            .training-content ul {
+                              padding-left: 20px;
+                              margin: 0;
+                            }
+                            
+                            .training-content li {
+                              margin-bottom: 6px;
+                            }
+                            
+                            .training-right h3 {
+                              color: #004a99;
+                              font-size: 18px;
+                              margin-bottom: 10px;
+                            }
+                            
+                            .training-table {
+                              width: 100%;
+                              border-collapse: collapse;
+                              margin-top: 10px;
+                              font-size: 14px;
+                              text-align: center;
+                            }
+                            
+                            .training-table th,
+                            .training-table td {
+                              border: 1px solid #ccc;
+                              padding: 8px;
+                            }
+                            
+                            .training-table th {
+                              background-color: #f0f0f0;
+                              font-weight: bold;
+                            }
+                            </style>
+                            <div class="image-gallery">
+                            <div class="training-comparison">
+                              <!-- Left content -->
+                              <div class="training-left">
+                                <div class="training-box">
+                                  <div class="section-title">混合精度训练</div>
+                                  <div class="training-content">
+                                    <ul>
+                                      <li>基于TensorFlow提供的自动混合精度训练（Auto Mixed Precision, AMP）</li>
+                                      <li><span class="red">搭配多种迁移策略：</span>混合精度、强制原精度、单精度浮点数、半精度浮点数、允许降精</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            
+                                <div class="training-box">
+                                  <div class="section-title">单浮点数精度训练</div>
+                                  <div class="training-content">
+                                    <ul>
+                                      <li>在模型训练过程中，使用<span class="red">32位浮点数</span>（FP32）来表示所有的参数、激活值和梯度进行训练</li>
+                                      <li>同样搭配以上迁移方式</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                                  
+                               <div class="training-right">
+                                <h3>➤ 通过不同训练方式和迁移方式组合设计了10种实验方案</h3>
+                                 <img src="images/c5.png" alt="实验方案对比图" style="width: 100%; max-width: 1000px; border: 1px solid #ccc; border-radius: 6px;">
+                                </div>
+                            </div>
+                             </div>
+
+
+
+                        <p style="margin-top: 60px;">选用迁移后F1分数（F1 score）、站点覆盖率（Site Coverage Rate）CPUE覆盖率（CPUE Coverage Rate）和模型执行时间（execution time）作为评判标准 </p>
+                        <style>
+                            .analysis-section {
+                                margin-top: 40px;
+                                font-family: "微软雅黑", sans-serif;
+                            }
+                            
+                           
+                            
+                            .training-block {
+                                border: 1px solid #dcdcdc;
+                                border-radius: 8px;
+                                margin-top: 20px;
+                                overflow: hidden;
+                                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+                            }
+                            
+                            .training-label {
+                                background-color: #004a99;
+                                color: white;
+                                padding: 8px 16px;
+                                font-weight: bold;
+                                font-size: 16px;
+                            }
+                            
+                            .training-content {
+                                padding: 16px;
+                                background-color: #f9f9f9;
+                                line-height: 1.7;
+                                font-size: 15px;
+                                border-top: 1px solid #ddd;
+                            }
+                            
+                            .red {
+                                color: red;
+                                font-weight: bold;
+                            }
+                            </style>
+                            <div class="image-gallery">
+                            <img src="images/aa.png" alt="计算模型" style="max-width: 70%; height: auto;">
+                            </div>
+                            <div class="analysis-section">
+                                <div  class="analysis-title"><strong>分析结果</strong></div>
+                            
+                                <div class="training-block">
+                                    <div class="training-label">混合精度训练</div>
+                                    <div class="training-content">
+                                        <span class="red">半精度浮点数迁移</span>得到的模型在精度没有下降的前提下，取得了最小的计算成本，且稳定性与应用效果均较好，<span class="red">为最优迁移方式</span>。
+                                    </div>
+                                </div>
+                            
+                                <div class="training-block">
+                                    <div class="training-label">单浮点数精度训练</div>
+                                    <div class="training-content">
+                                        <span class="red">半精度浮点数迁移</span>在保持精度的基础上取得了最小的计算成本，虽然<span class="red">稳定性有所下降</span>，但基本不影响模型的正常使用。
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nas-model" class="achievement-item">
+                <h3>实现多环境因子模型的迁移部署</h3>
+                <div class="achievement-content">
+                    <div class="image-gallery">
+                    <div class="achievement-text">
+                        <p>由于柔鱼生命周期较短，易受海洋环境因子波动影响，如海表面温度、叶绿素a浓度、海表面盐度和海表面高度等都对柔鱼的渔场分布有重要影响</p>
+                        <img src="images/c6.png" alt="计算模型" style="max-width: 70%; height: auto;">
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nas-model" class="achievement-item">
+                <h3>基于NAS遗传算法的轻量化模型</h3>
+                <div class="achievement-content">
+                    <div class="image-gallery">
+                    <div class="achievement-text">
+                        <p>神经网络架构搜索（NAS）：通过特定的算法在预设的架构空间中探索，寻找在特定任务如图像识别等上性能最优的神经网络结构，以替代传统依赖人工经验设计网络的方式。</p>
+                        <img src="images/c7.png" alt="计算模型" style="max-width: 70%; height: auto;">
+                    </div>
+                    </div>
+                </div>
+            </div>
+                <p style="margin-top: 40px;">主要构建了二分类模型、二分类 + 残差模型、回归模型共 3 种模型，并设计了梯度搜索与全局搜索两种方案，以对比基于遗传算法的神经架构搜索（NAS）策略能否降低陷入局部最优的概率。</p>
+                <div class="image-gallery">
+                <img src="images/c8.png" alt="计算模型" style="max-width: 70%; height: auto;">
+                </div>
+                <p style="margin-top: 24px;"><strong>关键机制</strong></p>
+                <p  style="margin-top: 7px; ">搜索空间：卷积核数量、尺寸，dropout率，学习率，编码器解码器深度</p>
+                <p >模型基本架构：包括二分类，二分类+残差，回归等3种模型</p>
+                <p >搜索方案：梯度搜索与全局搜索</p>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 海大智渔芯创平台. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<!-- 放大预览图层 -->
+<div id="image-modal">
+    <img src="" alt="放大预览">
+</div>
+</body>
+</html>
