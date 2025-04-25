@@ -8,30 +8,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// 联系表单提交
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // 获取表单数据
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
-        
-        // 简单验证
-        if (!name || !email || !message) {
-            alert('请填写必填字段');
-            return;
-        }
-        
-        // 模拟表单提交
-        alert('感谢您的留言！我们会尽快回复。');
-        contactForm.reset();
-    });
-}
-
 // 平滑滚动到锚点
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
