@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海大智渔芯创平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="海大智渔芯创平台">
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="team.html">团队成员</a></li>
+                    <li><a href="innovation.html">项目创新</a></li>
+                    <li></li><a href="achievements.html" class="dropdown-toggle">项目成果</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                    
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>海大智渔芯创平台</h1>
+            <p>致力于渔业智能化创新与应用</p>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="container">
+            <h2>平台介绍视频</h2>
+            <div class="video-wrapper">
+                <video controls poster="images/video-thumbnail.jpg">
+                    <source src="images/Aoxin.mp4" type="video/mp4">
+                    您的浏览器不支持 HTML5 视频标签。
+                </video>
+                <p class="video-description">
+                    本视频展示海大智渔芯创平台的创新理念与实践成果，欢迎点击观看。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <h2>柔鱼渔场预报新突破内容</h2>
+            <p>柔鱼是全球重要的渔业资源之一，其渔场分布受多种海洋环境因子影响，具有显著的时空动态变化特征。传统预报方法依赖大型服务器，数据传输与处理耗时长，难以满足远洋渔船的实时预报需求</p>
+            <p>‘敖芯1.0’基于国产自主AI芯片，结合边缘计算技术，实现了柔鱼渔场的远端实时预报。通过深度学习模型和多环境因子耦合分析，我们为远洋渔业提供了一套高效、精准的解决方案。</p>
+            <div class="image-gallery">
+                <img src="images/d1.png" alt="技术展示图1" style="max-width: 60%;">
+              </div>
+
+            <h2>技术赋能，创新引领内容</h2>
+            <p>国产AI芯片部署：“我们采用华为昇腾Atlas200IDKA2开发者套件，其峰值算力达4TFLOPs（FP16）/8TOPs（INT8），净重仅330g，不仅算力强大，还具备低功耗、高便携性。国产芯片的使用保障了技术自主可控，避免了国际局势波动带来的供应风险。”深度学习模型优化：“通过NAS遗传算法，我们构建了轻量化模型，显著降低了计算成本。在保持F1分数几乎不变的情况下，FLOPS下降了80%左右。混合精度训练和多种迁移策略的结合，进一步优化了模型的性能。”</p>
+            <p>多环境因子耦合分析：“柔鱼的分布受海表面温度（SST）、叶绿素a浓度（Chl-a）、海表面盐度（SSS）和海表面高度（SSH）等多种环境因子影响。我们通过实验验证，确定了SST和Chl-a的最佳组合，为精准预测提供了科学依据。”</p>
+            <div class="image-gallery">
+                <img src="images/d2.1.png" alt="实测照片1">
+                <img src="images/d2.2.png" alt="实测照片2">
+                <img src="images/d2.3.png" alt="实测照片3">
+                <img src="images/d2.4.png" alt="实测照片4">
+              </div>
+
+            <h2>海上实测，成果斐然内容</h2>
+            <p>研究团队在西北太平洋柔鱼渔场开展了多次海上实测验证工作，通过远洋渔船搭载相关设备，系统验证了模型的精度、平台的稳定性和硬件的适应性。实验结果表明，‘敖芯1.0’的各项核心指标均达到预期目标。</p>
+            <p>核心指标：</p>
+            <p>模型精度：R²指数提升至0.5-0.6，预测结果与实际渔场分布高度一致。</p>
+            <p>平台稳定性：系统运行稳定，无数据丢失或中断现象。</p>
+            <p>硬件适应性：边缘计算设备在海上恶劣环境下表现出色，适应性强。</p>
+            <div class="image-gallery">
+                <img src="images/d3.1.png" alt="实测照片1"style="max-width: 80%; height: auto;">
+                <img src="images/d3.2.png" alt="实测照片2"style="max-width: 80%; height: auto;">
+              </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 海大智渔芯创平台. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- 放大预览图层 -->
+     <div id="image-modal">
+        <img src="" alt="放大预览">
+    </div>
+  
+</body>
+</html>
