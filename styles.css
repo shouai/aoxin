@@ -481,25 +481,23 @@ footer p {
 }
 
 
-/* 在小屏幕上 (如手机)，让 logo 和导航项依然显示在一行 */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: row; /* 强制让子元素在一行上显示 */
-        justify-content: space-between; /* 保证内容在两端 */
+        flex-direction: row !important; /* 使用!important 确保样式应用 */
+        justify-content: space-between !important; 
     }
-    
-    /* 如果需要让 logo 更加紧凑，减少一些间距 */
+
     .logo img {
-        height: 40px; /* 可以调整 logo 的高度 */
+        height: 40px;
     }
-    
+
     .main-nav {
-        display: flex;
-        flex-direction: row; /* 保证导航项横向排列 */
+        display: flex !important;
+        flex-direction: row !important;
     }
-    
+
     .main-nav li {
-        margin-left: 20px; /* 控制每个导航项之间的间距 */
+        margin-left: 20px;
     }
 }
 
