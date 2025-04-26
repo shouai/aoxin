@@ -49,6 +49,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    color: #ffffff; /* 设置为白色 */
 }
 
 header .container {
@@ -586,14 +587,6 @@ footer p {
     
 
 
-  header {
-    background-color: #1c68b9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    color: #ffffff; /* 设置为白色 */
-}
 
 
 
