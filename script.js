@@ -8,6 +8,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
 // 平滑滚动到锚点
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -107,33 +108,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  
- // 初始化每组轮播的索引
-let currentIndex = [0, 0]; // 用一个数组存储多个轮播的当前索引
-
-// 更新每组轮播的显示
-function updateCarousel(carouselId, index) {
-    const carousel = document.getElementById(carouselId);
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-}
-
-// 下一张图片
-function nextImage(carouselIndex) {
-    const carouselId = `carousel${carouselIndex + 1}`;
-    const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
-    const totalImages = images.length;
-
-    currentIndex[carouselIndex] = (currentIndex[carouselIndex] + 1) % totalImages;
-    updateCarousel(carouselId, currentIndex[carouselIndex]);
-}
-
-// 上一张图片
-function prevImage(carouselIndex) {
-    const carouselId = `carousel${carouselIndex + 1}`;
-    const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
-    const totalImages = images.length;
-
-    currentIndex[carouselIndex] = (currentIndex[carouselIndex] - 1 + totalImages) % totalImages;
-    updateCarousel(carouselId, currentIndex[carouselIndex]);
-}
-
+ 
