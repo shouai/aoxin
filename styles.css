@@ -595,5 +595,29 @@ footer p {
     color: #ffffff; /* 设置为白色 */
 }
 
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-between;
+}
+
+.image-gallery img {
+    max-width: 16%;
+    height: auto;
+    margin-right: 2px;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .image-gallery img {
+        max-width: 30%; /* 在较小的屏幕上，确保每行显示 3 张图片 */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-gallery img {
+        max-width: 48%; /* 在手机屏幕上，确保每行显示 2 张图片 */
+    }
+}
 
  
