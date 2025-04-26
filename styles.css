@@ -463,6 +463,9 @@ header .container {
 }
 
 
+.submit-btn:hover {
+    background-color: #1d7268;
+}
 
 /* 页脚样式 */
 footer {
@@ -575,48 +578,4 @@ footer p {
   }
     
 
-  
-/* 轮播容器 */
-.carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-/* 轮播图片 */
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-image {
-    width: 100%;
-    height: auto;
-    cursor: pointer; /* 点击图片时显示放大预览 */
-}
-
-/* 左右箭头按钮 */
-.prev-btn,
-.next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 30px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
+ 
